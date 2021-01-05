@@ -1,0 +1,39 @@
+<h3 class="notification title has-text-centered mt-3 mb-2 pb-2">
+  My Heroes
+</h3>
+
+<div class="columns is-centered my-0">
+  <div class="column is-10">
+    <div class="field has-addons has-addons-centered mt-2 mb-0">
+      <div class="pt-2">Hero name：</div>
+      <div class="control">
+        <input #heroName class="input" />
+      </div>
+      <div class="control">
+        <button
+          type="button"
+          class="button is-primary"
+          (click)="add(heroName.value); heroName.value = ''"
+        >
+          add
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="columns is-centered mt-0">
+  <div class="column is-7 mt-0">
+    <ul>
+      <li *ngFor="let hero of heroes">
+        <div class="notification is-size-6 py-1 pl-2 mx-6">
+          <button class="delete"></button>
+          <a routerLink="/detail/{{ hero.id }}">
+            <span class="badge">{{ hero.id }}</span> {{ hero.name }}
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+<h3 class="notification title has-text-centered mt-3 mb-3">Top Heroes</h3>
+
+<div class="columns">
+  <div *ngFor="let hero of heroes" class="column is-3 is-offset-one-quarter-mobile is-half-mobile">
+    <a class="col-1-4" routerLink="/detail/{{ hero.id }}">
+      <div class="module hero">
+        <h4>{{ hero.name }}</h4>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="columns is-mobile is-centered">
+  <app-hero-search></app-hero-search>
+</div>

@@ -1,0 +1,13 @@
+<div class="columns is-centered my-6">
+  <div class="column is-10">
+    <article *ngIf="messageService.messages.length" class="panel is-info mt-3 has-text-centered">
+      <p class="panel-heading mx-6">Messages</p>
+      <button class="button is-inverted is-light mt-3 mb-1" (click)="messageService.clear()">clear</button>
+      <div *ngFor="let message of messageService.messages">
+        <div class="notification has-background-success-light py-1 mb-1 mx-6">
+          <span>{{ message }}</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>

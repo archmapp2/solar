@@ -1,0 +1,29 @@
+<div class="columns is-centered mt-6">
+  <div class="column is-6">
+    <div *ngIf="hero">
+      <h2 class="subtitle"><span class="has-text-white-ter">【 </span>{{ hero.name | uppercase }} <span class="has-text-white-ter">】</span> Details</h2>
+      <div class="is-size-4"><span>id: </span>{{ hero.id }}</div>
+      <!-- <form> -->
+        <div class="field">
+          <label class="label" for="name">名前変更:</label>
+          <div class="control">
+            <input
+              type="text"
+              class="input"
+              [(ngModel)]="hero.name"
+              id="name"
+              placeholder="name"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" class="button is-primary" (click)="goBack()">
+          go back
+        </button>
+        <button type="reset" class="button is-warning ml-3" (click)="save()">
+          save
+        </button>
+      <!-- </form> -->
+    </div>
+  </div>
+</div>
