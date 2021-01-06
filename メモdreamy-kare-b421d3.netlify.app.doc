@@ -1,0 +1,23 @@
+// https://angular.io/tutorial
+
+
+ng g c --help
+ng g c ~~/name --skipTests
+
+
+ng generate module app-routing --flat --module=app
+
+
+
+
+ng build --prod --baseHref=”https://archmapp2.github.io/minty"
+
+
+(solar)
+
+Repository
+github.com/archmapp2/solar
+dreamy-kare-b421d3
+
+dreamy-kare-b421d3.netlify.app
+https://dreamy-kare-b421d3.netlify.app/
