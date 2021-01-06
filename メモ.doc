@@ -11,3 +11,7 @@ ng generate module app-routing --flat --module=app
 
 
 ng build --prod --baseHref=”https://archmapp2.github.io/minty"
+
+
+(solar)
+unruffled-kepler-1883ef.netlify.app
